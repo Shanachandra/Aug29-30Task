@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <script>
+        var calc=document.createElement("div")
+        calc.classList.add("calculator-grid")
+        document.body.appendChild(calc)
+        var output=document.createElement("div")
+        output.setAttribute("class","output")
+        calc.appendChild(output)
+        var previous=document.createElement("div")
+        previous.setAttribute("class","previous-operand")
+        output.appendChild(previous)
+        var current=document.createElement("div")
+        current.setAttribute("class","current-operand")
+        output.appendChild(current)
+        
+        var ac=document.createElement("button")
+        ac.setAttribute("class","span-two")
+        ac.setAttribute("id","data-all-clear")
+        ac.innerText="AC"
+        calc.appendChild(ac)
+        var del=document.createElement("button")
+        del.setAttribute("class","data-delete")
+
+        del.innerText="DEL"
+        calc.appendChild(del)
+        var divi=document.createElement("button")
+        divi.setAttribute("class","data-operation")
+        divi.innerText="/"
+        calc.appendChild(divi)
+        var num1=document.createElement("button")
+        num1.setAttribute("class","data-number")
+        num1.innerText="1"
+        calc.appendChild(num1)
+        var num2=document.createElement("button")
+        num2.setAttribute("class","data-number")
+        num2.innerText="2"
+        calc.appendChild(num2)
+        var num3=document.createElement("button")
+        num3.setAttribute("class","data-number")
+        num3.innerText="3"
+        calc.appendChild(num3)
+        var mul=document.createElement("button")
+        mul.setAttribute("class","data-operation")
+        mul.innerText="*"
+        calc.appendChild(mul)
+        var num4=document.createElement("button")
+        num4.setAttribute("class","data-number")
+        num4.innerText="4"
+        calc.appendChild(num4)
+        var num5=document.createElement("button")
+        num5.setAttribute("class","data-number")
+        num5.innerText="5"
+        calc.appendChild(num5)
+        var num6=document.createElement("button")
+        num6.setAttribute("class","data-number")
+        num6.innerText="6"
+        calc.appendChild(num6)
+        var addi=document.createElement("button")
+        addi.setAttribute("class","data-operation")
+        addi.innerText="+"
+        calc.appendChild(addi)
+        var num7=document.createElement("button")
+        num7.setAttribute("class","data-number")
+        num7.innerText="7"
+        calc.appendChild(num7)
+        var num8=document.createElement("button")
+        num8.setAttribute("class","data-number")
+        num8.innerText="8"
+        calc.appendChild(num8)
+        var num9=document.createElement("button")
+        num9.setAttribute("class","data-number")
+        num9.innerText="9"
+        calc.appendChild(num9)
+        var subr=document.createElement("button")
+        subr.setAttribute("class","data-operation")
+        subr.innerText="-"
+        calc.appendChild(subr)
+        var dot=document.createElement("button")
+        dot.setAttribute("class","data-number")
+        dot.innerText="."
+        calc.appendChild(dot)
+        var num0=document.createElement("button")
+        num0.setAttribute("class","data-number")
+        num0.innerText="0"
+        calc.appendChild(num0)
+        var equals=document.createElement("button")
+        equals.setAttribute("class","span-two")
+        equals.setAttribute("id","data-equals")
+        equals.innerText="="
+        calc.appendChild(equals)
+    </script>
+
+    <!-- <div class="calculator-grid">
+        <div class="output">
+          <div class="data-previous-operand" class="previous-operand"></div>
+          <div class="data-current-operand"  class="current-operand"></div>
+          
+        </div>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>÷</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
+      </div> -->
+
+
+  <!-- <div class="calculator-grid">
+    <div class="output">
+      <div  class="previous-operand"></div>
+      <div  class="current-operand"></div>
+      
+    </div>
+    <button id="data-all-clear"  class="span-two">AC</button>
+    <button class="data-delete" >DEL</button>
+    <button class="data-operation">÷</button>
+    <button class="data-number">1</button>
+    <button class="data-number">2</button>
+    <button class="data-number">3</button>
+    <button class="data-operation">*</button>
+    <button class="data-number">4</button>
+    <button class="data-number">5</button>
+    <button class="data-number">6</button>
+    <button class="data-operation">+</button>
+    <button class="data-number">7</button>
+    <button class="data-number">8</button>
+    <button class="data-number">9</button>
+    <button class="data-operation">-</button>
+    <button class="data-number">.</button>
+    <button class="data-number">0</button>
+    <button id="data-equals" class="span-two">=</button>
+  </div> -->
+</body>
+</html>
